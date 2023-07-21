@@ -1,0 +1,122 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("background.jpg");
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.output-container {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 500px; /* Set a maximum width for the output container */
+    margin-left: auto; /* Center the output container horizontally */
+    margin-right: auto; /* Center the output container horizontally */
+    padding: 10px; /* Reduce padding to 10px */
+}
+
+ul.employee-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+ul.employee-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+ul.employee-list li:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    form, ul.employee-list li {
+        max-width: 100%;
+    }
+    .output-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .employee-list {
+        list-style: none;
+    }
+}
